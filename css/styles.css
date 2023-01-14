@@ -17,7 +17,6 @@
 }
 
 body {
-
     background: var(--white-color);
     font-family: Roboto, sans-serif;
     font-weight: 400;
@@ -28,35 +27,32 @@ body {
         color: var(--text-color);
 }
 
-h1 {
+.main-title {
 font-weight: 600;
 font-size: 56px;
 line-height: 1.07;
 color: var(--dark-color);
 }
 
-h2 {
-font-weight: 600;
-font-size: 36px;
-line-height: 1.11;
-text-transform: capitalize;
-color: var(--dark-color);
-}
-
-h3 {
-    font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        color: var(--dark-color);
-}
-
-
-ul {
+.list {
     list-style: none;
 }
 
-a {
+.link {
     text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+    color:var(--primary-brand-color)
+}
+
+.nav-link.current {
+    color: var(--primary-brand-color)
+}
+
+.btn {
+font-style: inherit;
 }
 
 /* header */
@@ -76,15 +72,16 @@ a {
 
 .nav-item {
         font-weight: 600;
-        color: var(--dark-color);
-        
+        color: var(--dark-color); 
 }
 
 .auth-link {
     color: var(--text-color);
 }
 
-/* main-page */
+/* main page */
+
+/* hero section */
 
 .hero {
     background-color: var(--dark-color);
@@ -92,9 +89,6 @@ a {
 
 .hero-title {
     color: var(--white-color);
-    Font-style: 600; 
-    font-size: 56px;
-    line-height: 1.07;
 }
 
 .hero-button {
@@ -105,12 +99,36 @@ a {
     background-color: var(--primary-brand-color);
 }
 
+/* sections */
+
+.examples-title,
+.team-title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: var(--dark-color);
+}
+
+.strength-title, 
+.team-title, 
+.projects-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--dark-color);
+}
+
 .team {
     background-color: var(--light-color);
 }
+
+.team-member {
+    background-color: var(--white-color);
+}
 /* footer */
 
-footer {
+.footer {
     background-color: var(--dark-color);
 }
 
@@ -118,18 +136,18 @@ footer {
     color: var(--light-color);
 }
 
-footer p {
+.footer-text {
     color: var(--accent-color);
 }
 
-/* portfolio */
+/* portfolio page */
 
-.filter {
+.projects-filter {
     background-color: var(--light-color);
-    color: var(--main-brand-color);
+    color: var(--primary-brand-color);
 }
 
-.filter:active {
+.projects-filter:active {
     background-color: var(--pressed-state-color);
     color: var(--white-color);
 }
