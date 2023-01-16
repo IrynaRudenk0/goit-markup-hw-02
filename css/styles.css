@@ -43,6 +43,9 @@ body {
 
 .btn {
 font-style: inherit;
+background-color: var(--pressed-state-color);
+    color: var(--white-color);
+    cursor: pointer;
 }
 
 /* header */
@@ -62,18 +65,15 @@ font-style: inherit;
 }
 
 .nav-link {
-    font-style: inherit;    
     font-weight: 500;
-        font-size: 16px;
-            line-height: 1.28;
+            line-height: 1.5;
             letter-spacing: 0.02em;
         color: var(--dark-color); 
 }
 
 .address-link {
     font-style: normal;
-    font-size: 16px;
-        line-height: 1.28;
+        line-height: 1.5;
         letter-spacing: 0.02em;
     color: var(--text-color);
 }
@@ -86,7 +86,6 @@ font-style: inherit;
 }
 
 .hero-title {
-    font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
@@ -105,7 +104,6 @@ font-style: inherit;
 /* sections */
 
 .section-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
 letter-spacing: 0.02em;
@@ -113,7 +111,7 @@ letter-spacing: 0.02em;
     color: var(--dark-color);
 }
 
-.subsection-title {
+.section-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -122,8 +120,7 @@ letter-spacing: 0.02em;
 }
 
 .section-text {
-    font-size: 16px;
-    line-height: 1.28;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -146,8 +143,7 @@ letter-spacing: 0.02em;
 
 .footer-text {
     color: var(--accent-color);
-        font-size: 16px;
-            line-height: 1.28;
+            line-height: 1.5;
             letter-spacing: 0.02em;
 }
 
@@ -161,7 +157,11 @@ letter-spacing: 0.02em;
     color: var(--primary-brand-color);
 }
 
-.projects-filter:active {
+.projects-filter:hover,
+.projects-filter:focus,
+.projects-filter:active
+ {
     background-color: var(--pressed-state-color);
     color: var(--white-color);
+    cursor: pointer;
 }
