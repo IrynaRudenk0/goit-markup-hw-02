@@ -55,8 +55,8 @@ background-color: var(--pressed-state-color);
     font-weight: 800;
     text-transform: uppercase;
     color: var(--primary-brand-color);
-    font-size: 16px;
-        line-height: 128%;
+    font-size: 18px;
+        line-height: 1.33;
 }
 
 .logo-black {
